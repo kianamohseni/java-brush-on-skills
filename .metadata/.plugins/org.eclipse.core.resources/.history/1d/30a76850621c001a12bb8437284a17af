@@ -1,0 +1,12 @@
+package java_basics;
+
+public class myUtils {
+
+	public static void printSomeNumber(int arg) {
+		System.out.println(arg);
+	}
+	
+	public static void sum2Args(int firstNum, int secondNum) {
+		System.out.println(firstNum+secondNum);
+	}
+}

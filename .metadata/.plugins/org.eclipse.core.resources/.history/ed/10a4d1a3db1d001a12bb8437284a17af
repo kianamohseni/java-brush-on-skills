@@ -1,0 +1,10 @@
+package java_basics;
+
+public class chicken extends bird{
+
+	public chicken(int wingSpan) {
+		super(wingSpan);
+		// TODO Auto-generated constructor stub
+	}
+
+}

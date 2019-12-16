@@ -1,0 +1,22 @@
+package java_basics;
+
+public class animal {
+
+	int age;
+	String name;
+	int weight;
+
+	
+
+public animal(int age, String name, int weightInPounds) {
+
+	this.age = age;
+	this.name = name;
+	this.weight = weightInPounds;
+	
+}
+
+public void walk() {
+	System.out.println("walking ..." + this.age );
+}
+}

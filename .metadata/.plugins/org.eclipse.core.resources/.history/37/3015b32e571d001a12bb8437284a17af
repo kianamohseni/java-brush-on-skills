@@ -1,0 +1,14 @@
+package java_basics;
+
+public class bird {
+	
+	int wingSpan;
+	
+	public bird(int wingSpan) {
+		this.wingSpan = wingSpan;
+	}
+
+	public void soar() {
+		System.out.println("bird is soaring with wings" + this.wingSpan + "wide");
+	}
+}

@@ -1,0 +1,8 @@
+package cars;
+
+public class House (){
+	double price;
+	int	age;
+	String owner;
+	boolean currently_for_sale;
+}

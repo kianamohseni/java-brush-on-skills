@@ -1,0 +1,14 @@
+package java_basics;
+
+public class zoo {
+
+	public static void main(String[] args) {
+		animal animal1 = new animal(2, "cat", 10);
+		bird bird1 = new bird(14);
+		
+		animal1.walk();
+		animal.fly(3);
+		bird1.soar();
+	}
+
+}

@@ -1,0 +1,13 @@
+package java_basics;
+
+public class LearningArrays {
+
+	public static void main(String[] args) {
+
+		double [] values = new double[100];
+		values[0] = 1;
+		values[99] = 100;
+		System.out.println(values[99]);
+	}
+
+}

@@ -1,0 +1,29 @@
+package Loops;
+
+public class myLoopies {
+
+	public static void main(String[] args) {
+
+		String str = "We have a large inventory of things in our warehouse falling in"
+				+ "the category:apparel and the slightly "
+				+"more in demand category:makeup";
+		
+		printCategories(str);
+	}
+	public static void printCategories(String str) {
+		int i;
+		int j;
+		i = str.indexOf("category");
+		String myString;
+		System.out.println(i);
+
+		myString = str.substring(i+9);
+		
+		j = myString.indexOf(" ");
+		System.out.println(j);
+		
+		System.out.println(myString.substring(0,j));
+		
+	}
+
+}

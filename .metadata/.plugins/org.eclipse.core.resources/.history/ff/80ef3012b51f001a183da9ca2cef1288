@@ -1,0 +1,34 @@
+package cars;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class dealership {
+
+	public static void main(String[] args) {
+		ArrayList<String> words = new ArrayList<String>();
+		words.add("hello ");
+		words.add("there ");
+		words.add("kiana!");
+	
+		for (int i=0; i< words.size(); i++) {
+			System.out.print(words.get(i));
+		}
+		
+		words.remove(1);
+		
+		for (int i=0; i< words.size(); i++) {
+			System.out.print(words.get(i));
+		}	
+		
+		LinkedList<Integer> list = new LinkedList<Integer>();
+		
+		list.add(12);
+		list.add(34);
+		list.add(56);
+		list.remove(1);
+		for (int i=0; i< list.size(); i++) {
+			System.out.print(list.get(i));
+		}
+	}
+}

@@ -1,0 +1,15 @@
+package java_basics;
+
+public class fish {
+	String colour;
+	float length;
+	
+	public fish(int length, String colour) {
+		this.colour = colour;
+		this.length = length;
+	}
+	
+	public void swim() {
+		System.out.println("swiming fishy in bright " + this.colour + " colour.");
+	}
+}

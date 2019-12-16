@@ -1,0 +1,23 @@
+package java_basics;
+
+public class ControlFlow {
+
+	public static void main(String[] args) {
+
+		int hungry = 3;
+		
+		if(hungry < 2) {
+			System.out.println("I'm not starving");
+		} else if (hungry < 4){
+			System.out.println("I'm peckish");
+
+		} else if (hungry < 6) {
+			System.out.println("I could eat.");
+
+		} else {
+			System.out.println("I'm okay, thanks!");
+
+		}
+	}
+
+}

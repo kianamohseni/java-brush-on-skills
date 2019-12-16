@@ -1,0 +1,13 @@
+package cars;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class dealership {
+
+	public static void main(String[] args) {
+		House myHouse = new House();
+		myHouse.set_price(100000.00);
+		System.out.println(myHouse.get_price());
+		}
+	}

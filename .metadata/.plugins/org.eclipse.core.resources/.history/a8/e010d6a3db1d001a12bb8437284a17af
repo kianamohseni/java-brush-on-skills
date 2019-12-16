@@ -1,0 +1,17 @@
+package java_basics;
+
+public class VariablesContinued {
+
+	public static void main(String[] args) {
+		int var = 1000000000;
+		long bigNumber = 1000000000000000000L;
+		short smallNumber = 32767;
+		short negativeNumber = -32768;
+		byte vSmallNumber = 127;
+		double decimalVariable = 394.892; //floating point
+		boolean decision = true;
+		char letter = '9';
+		
+	}
+
+}

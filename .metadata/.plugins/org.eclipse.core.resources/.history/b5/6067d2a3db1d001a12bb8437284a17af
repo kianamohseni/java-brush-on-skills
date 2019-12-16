@@ -1,0 +1,18 @@
+package java_basics;
+
+public class myUtils {
+
+	public static void printSomeNumber(int arg) {
+		System.out.println(arg);
+	}
+	
+	public static String printSomeJunk(int arg) {
+		String s = "Some Junk " + Integer.toString(arg);
+		return s;
+	}
+	
+	public static int add10(int Arg) {
+		int result = Arg + 10;
+		return result;
+	}
+}

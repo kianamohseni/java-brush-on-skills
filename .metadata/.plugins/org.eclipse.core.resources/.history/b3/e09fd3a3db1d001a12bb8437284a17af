@@ -1,0 +1,15 @@
+package java_basics;
+
+public class bird extends animal {
+
+
+	private int wingSpan;
+
+	public bird(int age, String name, int weightInPounds, int wingSpan) {
+		super(age, name, weightInPounds);
+	}
+
+	public void soar() {
+		System.out.println("bird is soaring with wings " + this.wingSpan + "m wide");
+	}
+}

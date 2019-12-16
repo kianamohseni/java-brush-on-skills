@@ -1,0 +1,54 @@
+package cars;
+
+public class dealership {
+
+	public static void main(String[] args) {
+		employee employee1 = new employee();
+//		employee employee2 = new employee();
+		
+		customer customer1 = new customer();
+		customer customer2 = new customer();
+		
+		car car1 = new car();
+		car car2 = new car();
+		
+		customer1.set_customer_number(1);
+		customer1.set_customer_name("customer_name1");
+//		customer1.set_customer_address("customer_address1");
+		
+		customer2.set_customer_number(2);
+		customer2.set_customer_name("customer_name2");
+//		customer2.customer_address = "customer_address2";
+		
+		employee1.employee_id = 1;
+		employee1.employee_bonus = 0;
+		employee1.employee_name = "Fred";
+		
+		car1.set_listed_price(5000.00);
+		customer1.set_cash_on_hand(4000.00);
+		
+		double loanAmount = car1.get_listed_price() - customer1.get_cash_on_hand();
+		
+		handleCustomer(customer1, car1, loanAmount, employee1);
+		car1.print_sale_details();
+	}
+
+	public static void handleCustomer(customer cust, car car, double loanAmount, employee employee) {
+		boolean proceed_with_sale = false;
+		
+		if (loanAmount <= 0){
+			proceed_with_sale = true;
+		} 
+		else {
+			proceed_with_sale = cust.runCreditHistory(loanAmount);
+		}
+		if (proceed_with_sale){
+			car.car_got_sold(employee, cust, car.get_listed_price());
+			System.out.println("One happy customer");
+		} else {
+			System.out.println("Tell customer to bring more money.");
+		}
+		
+	}
+
+}

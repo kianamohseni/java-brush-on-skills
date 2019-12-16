@@ -1,0 +1,13 @@
+package Inheritance;
+
+public class bird extends animal{
+
+	public bird(int weight, int height) {
+		super(weight, height);
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void fly() {
+		System.out.println("flying ...");
+	};
+}

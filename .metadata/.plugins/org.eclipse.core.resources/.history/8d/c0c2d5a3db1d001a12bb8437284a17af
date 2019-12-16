@@ -1,0 +1,16 @@
+package java_basics;
+
+public class earth {
+
+	public static void main(String[] args) {
+
+		humans human1 = new humans(01, 02, "wow");
+		humans human2 = new humans(10, 20, "pow wow");
+		humans human3 = new humans(100, 200, "double wow");
+		
+		human1.speak();
+		human2.speak();
+		human3.speak();
+	}
+
+}

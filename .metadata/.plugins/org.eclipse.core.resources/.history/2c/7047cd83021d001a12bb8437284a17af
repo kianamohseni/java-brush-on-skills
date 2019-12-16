@@ -1,0 +1,26 @@
+package java_basics;
+
+// import anotherPackage.newPackageClass;
+
+public class learningMethods {
+
+	public static void main(String[] args) {
+
+//		myUtils.printSomeNumber(2);
+//		int result = myUtils.add10(3);
+//		System.out.println(result);
+//		String myString;
+//		myString = myUtils.printSomeJunk(777);
+//		System.out.println(myString);
+		
+//		newPackageClass.cryMeARiver();
+
+		humans kiana;
+		kiana = new humans();
+		
+		kiana.speak();
+	}
+	
+	
+
+}

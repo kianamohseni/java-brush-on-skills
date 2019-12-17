@@ -13,8 +13,10 @@ public class hashMaps {
 		dictionary.put("Omega",  "Middle Lating letter");
 		dictionary.put("Zeta", "Last Latin letter");
 
-	for (String key: dictionary.keySet()) {
-		System.out.println(dictionary.entrySet());
-	}
+//		System.out.println(dictionary.entrySet());		
+		
+		for (String key: dictionary.keySet()) {
+			System.out.println(dictionary.keySet());
+		}
 	}
 }

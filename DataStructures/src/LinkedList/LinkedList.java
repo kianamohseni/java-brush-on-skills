@@ -59,9 +59,11 @@ public class LinkedList {
 		}
 		if ( head.data == value) {
 			head = head.next;
+			position = 1;
 			return true;
 		}
 		Node currentNode = head;
+		position = 1;
 		while (currentNode.next.data != value) {
 			currentNode = currentNode.next;
 			position++;

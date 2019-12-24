@@ -1,6 +1,7 @@
 package Graphs;
 
 import java.util.LinkedList;
+import java.util.Iterator;
 
 public class Graph {
 	private LinkedList<Integer> graph[];
@@ -33,6 +34,26 @@ public class Graph {
 		}
 	}
 	public void BFS(int i) {
+		boolean visited[] = new boolean[vertices];
+		
+		LinkedList<Integer> queue = new LinkedList();
+		System.out.print("starting at: " + i + " ");
+		visited[i] = true;
+		queue.add(i);
+		
+		while(!queue.isEmpty()) {
+			int z = queue.poll();
+			Iterator<Integer> m = graph[z].listIterator();
+			while (m.hasNext()) {
+				int n = m.next();
+				if (!visited[n]) {
+					visited[n]=true;
+					System.out.print(n + " ");
+					queue.add(n);
+				}
+			}
+		}
+		
 		
 	}
 
